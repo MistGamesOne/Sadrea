@@ -8,23 +8,41 @@
 
     <body>
         <div class="y-center">
-            <div class=container>
-                <h1>Sadrea Tournaments</h1>
-                <p>Добро пожаловать на нашу компанию!</p>
-                <p>Мы занимаемся организацией турниров, в которых можно выйграть реальные деньги</p>
-                <p>Чтобы узнать больше нажмите на ссылки ниже</p>
+            <div class=container id="header">
+                <div class="content">
+                    <h1>Sadrea Tournaments</h1>
+                    <p>Добро пожаловать на нашу компанию!</p>
+                    <p>Мы занимаемся организацией турниров, в которых можно выйграть реальные деньги</p>
+                    <p>Чтобы узнать больше нажмите на ссылки ниже</p>
+                </div>
             </div>
-            <div class="menu">
+
+            <div class="menu" id="menu">
                 <div class="container">
-                    <h2 id="open-menu">Меню</h2>
-                    <div class="closed" id="menu-elements">
-                        1)Все о компании<br>
-                        2)<a href="B.html">Турниры</a><br>
-                        3)<a href="B.html">Общение</a><br>
-                        4)<a href="A.html">Лицензионное соглашение</a>
+                    <div class="content">
+                        <h2 id="open-menu">Меню</h2>
+                        <div class="closed y-center" id="menu-elements">
+                            <button id="open-company-info">Все о компании</button>
+                            <button>Турниры</button>
+                            <button>Общение</button>
+                            <button>Лицензионное соглашение</button>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <div class="container" id="company-info">
+                <div class="close-button-container">
+                    <div class="close-button" id="close-company-info"></div>
+                </div>
+                <div class="content" id="company-info-content">
+                    инфо о компании
+                </div>
+            </div>
+
+
         </div>
     </body>
+
+    <script src="/static/scripts/script.js"></script>
 </html>
