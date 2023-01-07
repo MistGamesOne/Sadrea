@@ -7,35 +7,42 @@ body {
     color: #000000;
     background-image: url("/static/images/index_bg.jpg");
     overflow: hidden;
+    
+
 }
 
 h1 {
+    font-family: 'Arkhip';
     margin-top: 0px;
     margin-bottom: 5vh;
 }
 
 h2 {
     margin: 0px;
+    font-family: 'Arkhip';
 }
 
 .container {
     margin-bottom: 5vh;
     height: fit-content;
     text-align: center;
-    border: 1px solid black;
+    border-radius: 10px;
     background-color: rgb(255, 255, 255, 0.3);
     backdrop-filter: blur(4px);
     font-weight: bolder;
     transition: all 0.5s;
+    font-family: 'Arkhip';
 }
 .container:hover #menu-elements {
     height: fit-content;
     margin-top: 5vh;
+    font-family: 'Arkhip';
 }
 
 .close-button-container {
     display: flex;
     flex-direction: row-reverse;
+    font-family: 'Arkhip';
 }
 
 #menu-elements {
@@ -43,6 +50,7 @@ h2 {
     margin-top: 0vh;
     overflow: hidden;
     transition: all 0.5s;
+    font-family: 'Arkhip';
 }
 
 #menu-elements button {
@@ -71,6 +79,18 @@ h2 {
     display: none;
 }
 
+#tournaments-info {
+    display: none;
+}
+
+#tolking-info {
+    display: none;
+}
+
+#lecensy-info {
+    display: none;
+}
+
 .content {
     padding: 5vh;
 }
@@ -78,8 +98,23 @@ h2 {
 #company-info-content {
     padding-top: 0px;
 }
+#open-tournaments-info button {
+    margin: 0vh;
+    padding: 1vh;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
 
-#company-info button {
+#open-tolking-info button {
+    margin: 0vh;
+    padding: 1vh;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+#open-lecensy-info button {
     margin: 0vh;
     padding: 1vh;
     border: none;
@@ -93,5 +128,14 @@ h2 {
     background-image: url("/static/images/icons/cross.png");
     background-size: cover;
     cursor: pointer;
+}
+@font-face {
+    font-family: 'Arkhip';
+    src: url('../app/static/css/fonts/arkhip.eot'); /* IE 9 Compatibility Mode */
+    src: url('../app/static/css/fonts/arkhip.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+        url('../app/static/css/fonts/arkhip.woff2') format('woff2'), /* Super Modern Browsers */
+        url('./app/static/css/fonts/arkhip.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+        url('./app/static/css/fonts/arkhip.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('./app/static/css/fonts/arkhip.svg#arkhip') format('svg'); /* Chrome < 4, Legacy iOS */
 }
 
