@@ -137,5 +137,6 @@ h2 {
         url('./app/static/css/fonts/arkhip.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
         url('./app/static/css/fonts/arkhip.ttf') format('truetype'), /* Safari, Android, iOS */
         url('./app/static/css/fonts/arkhip.svg#arkhip') format('svg'); /* Chrome < 4, Legacy iOS */
+        
 }
 
